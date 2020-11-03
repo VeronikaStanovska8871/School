@@ -27,4 +27,8 @@ public class Grades {
         return "Grades: MATH: "+math+" ENG: "+eng+" PRO: "+pro;
 }
 
+    public double average(){
+        return (double) (math+eng+pro)/3;
+    }
+
 }

@@ -81,8 +81,8 @@ public class Student {
         for (int i = 0; i < counthobby; i++)
             System.out.println(hobbies[i].getName());
         if (hobbies[i] instanceof Book)
-            System.out.println((Book) hobbies[i]).getAuthor());
+            System.out.println(((Book) hobbies[i]).getAuthor());
         if (hobbies[i] instanceof Movie)
-            System.out.println((Movie) hobbies[i]).getYear());
+            System.out.println(((Movie) hobbies[i]).getYear());
     }
 }

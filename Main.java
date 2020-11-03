@@ -93,4 +93,14 @@ public class Main {
 
 
     }
+    private static void shortByAverage (Student [] students){
+        int len= students.length;
+        for (int i=0; i<len; i++)
+            for (int j=0; i<len; j++)
+                if (students[j].getGrades().average()>students[j+1].getGrades().average()){
+                    Student temp=  students [j];
+                    students [j]= students [j+1];
+                    students [j+1]=temp;
+                }
+    }
 }
